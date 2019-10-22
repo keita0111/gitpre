@@ -1,0 +1,38 @@
+.menu-all-wrap {
+    display: flex;
+    justify-content: space-between;
+    @include tab {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+.menu-wrap {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 274px;
+    height: 555px;
+    .menu-img {
+        height: 271px;
+        width: 274px;
+    }
+    .menu-logo {
+        letter-spacing: 3px;
+        font-size: 3rem;
+        text-align: center;
+    }
+    .menu-text {
+        font-size: 1.6rem;
+        letter-spacing: 1.6px;
+    }
+    .menu-price {
+        font-size: 1.6rem;
+        letter-spacing: 1.6px;
+        text-align: right;
+        @include tab {
+                margin-bottom: 62px;
+            }
+        }
+    }

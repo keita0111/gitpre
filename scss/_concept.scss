@@ -1,0 +1,73 @@
+.cc-color1 {
+    background-color: $smoke;
+    height: 407px;
+    @include tab {
+        height: 176px;
+    }
+}
+.cc-color2 {
+    background-color: $gray;
+    background: linear-gradient(#fff,#000);
+    height: 536px;
+}
+
+
+
+.img-wrap {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    position: relative;
+    z-index: 10;
+    .cc-left {
+        width: 62%;
+        @include tab{
+            object-fit: cover;
+            width: 49%;
+        }
+    }
+    .cc-right{
+        width: 36%;
+        @include tab{
+            width: 49%;
+        }
+    }
+}
+
+.cc-task{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 366px;
+    padding-bottom: 64px;
+    width: 100%;
+    color: #fff;
+    @include tab{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        padding-top: 45%;
+    }
+    .cc-logo {
+        font-size: 4.2rem;
+        letter-spacing: 16px;
+        font-family: "hiragino";
+        white-space: nowrap;
+        margin-left: 13%;
+        @include tab {
+            font-size: 1.8rem;
+        }
+    }
+    .cc-text {
+        font-size: 1.6rem;
+        width: 33%;
+        margin-right: 14%;
+        @include tab {
+            width: 90%;
+            margin: 0 auto;
+            padding-top: 13%;
+            letter-spacing: 1.6px;
+            line-height: 150%;
+        }
+    }
+}

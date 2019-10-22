@@ -1,0 +1,50 @@
+footer {
+    .inner {
+        margin: 165px auto 62px;
+        padding-top: 83px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-top: #70707036 solid 1px;
+        @include tab {
+            flex-direction: column-reverse;
+            padding-top: 60px;
+            margin: 63px auto 20px;
+        }
+    }
+}
+.footer-icon {
+    width: 31%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include tab {
+        width: 100%;
+    }
+    .footer-logo {
+        color: #7070704D;
+        font-size: 3.2rem;
+        margin-right: 26px;
+        white-space: nowrap;
+        @include sp {
+            font-size: 2rem;
+        }
+    }
+    .fab {
+        font-size: 3.2rem;
+        margin-right: 9px;
+        white-space: nowrap;
+    }
+}
+.reserve {
+    color: #707070;
+    font-size: 1.8rem;
+    padding: 10px 41px;
+    border: 1px solid #707070;
+    @include tab {
+        margin-bottom: 62px;
+        width: 55%;
+        padding: 10px 0px;
+        text-align: center;
+    }
+}

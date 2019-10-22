@@ -1,0 +1,62 @@
+.first-view {
+    display: flex;
+    width: 100%;
+    height: 800px;
+    @include tab {
+        background-image: url(../img/bg.png);
+        background-size: cover;
+        background-position: top 15% 50%;
+    }
+}
+.fv-left {
+    width: 46%;
+    height: 800px;
+    position: relative;
+    @include tab {
+        width: 100%;
+    }
+    .fv-wrap {
+        height: 26%;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        @include tab {
+            color: #fff;
+            flex-direction: column-reverse;
+            height: 118px;
+        }
+        .fv-text1 {
+            font-size: 3.8rem;
+            letter-spacing: 3.8px;
+            font-family: "hiragino";
+            @include tab {
+                font-size: 2.8rem;
+                letter-spacing: 2.8px;
+            }
+        }
+        .fv-text2 {
+            font-size: 3.8rem;
+            letter-spacing: 3.8px;
+            font-family: "Zapfino";
+            @include tab {
+                font-size: 2.8rem;
+                letter-spacing: 2.8px;
+            }
+        }
+    }
+}
+
+.fv-img {
+    background-image: url(../img/bg.png);
+    width: 54%;
+    background-size: cover;
+    @include tab {
+        display: none;
+    }
+}

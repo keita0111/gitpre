@@ -1,0 +1,52 @@
+$gray: #A1938689;
+$smoke: #A193861F;
+
+@mixin pc {
+    @media screen and (min-width: 960px) {
+        @content;
+    }
+}
+@mixin tab {
+    @media screen and (max-width: 959px) {
+        @content;
+    }
+}
+@mixin sp {
+    @media screen and (max-width: 600px) {
+        @content;
+    }
+}
+
+html {
+    font-size: 62.5%;
+}
+
+.title {
+    width: 234px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.8rem;
+    letter-spacing: 5.4px;
+    color: #707070;
+    padding-bottom: 11px;
+    @include tab {
+        margin-bottom: 50px;
+    }
+    &:after {
+        display: inline-block;
+        content: "";
+        border: 1px solid #707070;
+        width: 90px;
+    }
+}
+
+.inner {
+    width: 100% - 7% * 2;
+    margin: 0 auto;
+    padding-top: 261px;
+    margin-bottom: 64px;
+    @include tab {
+        padding-top: 60px;
+    }
+}
